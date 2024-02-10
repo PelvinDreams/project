@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: #9548b9;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+nav .fas {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section img {
+    width: 40%;
+    height: auto;
+    float: right;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+   
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .text {
+    font-size: 20px;
+    margin-top: 100px;
+    justify-content: center;
+    padding: 0 60px;
+  }
+
+p{
+   top: 50%;
+   left: 50%;
+}
+
+span{
+    color: #9548b9;
+}
+
+section button {
+    background-color: #4CAF50 transparent;
+    border: none;
+    color:  #9548b9;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 909px) {
+    nav .fas {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #190822;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+}
+
+section {
+    background: url() no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
